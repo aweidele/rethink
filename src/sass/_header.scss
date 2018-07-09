@@ -1,0 +1,29 @@
+.header {
+  background: $black;
+}
+
+.header_inner {
+  @include inner_content;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header_logo {
+  width: 243px;
+  padding: 25px 0;
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .logo_re {
+    fill: $gray_10;
+  }
+
+  .logo_think {
+    fill: $yellow;
+  }
+}

@@ -1,0 +1,6 @@
+@mixin inner_content {
+  width: 100%;
+  max-width: $page_width + ($page_padding * 2);
+  margin: auto;
+  padding: 0 $page_padding;
+}
