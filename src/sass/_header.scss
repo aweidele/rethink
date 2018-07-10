@@ -1,5 +1,7 @@
 .header {
+  width: 100%;
   background: $black;
+  position: fixed;
 }
 
 .header_inner {
@@ -11,8 +13,12 @@
 
 
 .header_logo {
-  width: 243px;
+  width: 180px;
   padding: 25px 0;
+
+  @media #{$mediaLG} {
+    width: 243px;
+  }
 
   svg {
     width: 100%;

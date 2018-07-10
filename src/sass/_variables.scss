@@ -2,3 +2,19 @@ $page_width: 1400px;
 $page_padding: 20px;
 
 $speed: 0.25s;
+
+
+// Breakpoints
+$min_xl: 1200px;
+$min_lg: 1024px;
+$min_md: 768px;
+$min_sm: 425px;
+$min_xs: 375px;
+
+
+// Media Queries
+$mediaXS: "screen and (min-width: #{$min_xs})";
+$mediaSM: "screen and (min-width: #{$min_sm})";
+$mediaMD: "screen and (min-width: #{$min_md})";
+$mediaLG: "screen and (min-width: #{$min_lg})";
+$mediaXL: "screen and (min-width: #{$min_xl})";

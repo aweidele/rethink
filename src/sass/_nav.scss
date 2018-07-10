@@ -1,7 +1,6 @@
 .main_nav {
   ul {
     list-style: none;
-    display: flex;
   }
 
   a {
@@ -16,7 +15,7 @@
 
       position: absolute;
       left: 0;
-      bottom: -9px;
+      bottom: -6px;
 
       content: "";
       background: $white;
@@ -26,14 +25,14 @@
 
     &:hover {
       &:after {
-        height: 5px;
+        height: 3px;
       }
     }
   }
 
   li {
-    font-size: 24px;
-    padding: 0 32px;
+    font-size: 18px;
+    padding: 0 16px;
     @include letterspacing(75);
     @include bold;
 
@@ -44,9 +43,33 @@
     &.current-menu-item {
       a {
         &:after {
-          height: 5px;
+          height: 3px;
           background: $yellow;
         }
+      }
+    }
+  }
+
+  @media #{$mediaMD} {
+    ul {
+      display: flex;
+    }
+  }
+
+  @media #{$mediaLG} {
+    li {
+      font-size: 24px;
+      padding: 0 32px;
+    }
+
+    a:after {
+      bottom: -9px;
+    }
+
+    a:hover,
+    li.current-menu-item a {
+      &:after {
+        height: 5px;
       }
     }
   }
