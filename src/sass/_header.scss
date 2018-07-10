@@ -22,12 +22,12 @@
 
   .logo_re {
     fill: $gray_10;
-    transition: fill $speed;
+    transition: fill $speed * 2;
   }
 
   .logo_think {
     fill: $yellow;
-    transition: fill $speed;
+    transition: fill $speed * 2;
   }
 
   a {
