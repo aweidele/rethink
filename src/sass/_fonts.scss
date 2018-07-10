@@ -1,0 +1,19 @@
+$reg: 400;
+$bold: 600;
+$xbold: 700;
+
+@mixin site_font {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin reg {
+  font-weight: $reg;
+}
+
+@mixin bold {
+  font-weight: $bold;
+}
+
+@mixin xbold {
+  font-weight: $xbold;
+}

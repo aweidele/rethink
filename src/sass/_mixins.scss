@@ -4,3 +4,7 @@
   margin: auto;
   padding: 0 $page_padding;
 }
+
+@mixin letterspacing($kern: 0) {
+  letter-spacing: ($kern / 1000) * 1em;
+}

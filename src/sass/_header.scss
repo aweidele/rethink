@@ -5,6 +5,7 @@
 .header_inner {
   @include inner_content;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -21,9 +22,20 @@
 
   .logo_re {
     fill: $gray_10;
+    transition: fill $speed;
   }
 
   .logo_think {
     fill: $yellow;
+    transition: fill $speed;
+  }
+
+  a {
+    &:hover {
+      .logo_re,
+      .logo_think {
+        fill: $white;
+      }
+    }
   }
 }
