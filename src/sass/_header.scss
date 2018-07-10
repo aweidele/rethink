@@ -1,9 +1,14 @@
-$header_height: 92px;
+$header_height: 80px;
 
 .header {
   width: 100%;
+  height: $header_height;
   background: $black;
   position: fixed;
+
+  @media #{$mediaMD} {
+    height: auto;
+  }
 }
 
 .header_inner {
@@ -15,8 +20,12 @@ $header_height: 92px;
 
 
 .header_logo {
-  width: 180px;
+  width: 130px;
   padding: 25px 0;
+
+  @media #{$mediaMD} {
+    width: 180px;
+  }
 
   @media #{$mediaLG} {
     width: 243px;
@@ -45,9 +54,5 @@ $header_height: 92px;
         fill: $white;
       }
     }
-  }
-
-  @media #{$maxMD} {
-    height: $header_height;
   }
 }

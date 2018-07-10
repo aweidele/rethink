@@ -117,6 +117,10 @@
 }
 
 
+// Hamburger Menu
+$hamburger_height: 3px;
+$hamburger_width: 32px;
+
 .menu_toggle {
   width: $header_height;
   height: $header_height;
@@ -143,12 +147,12 @@
   i,
   &:after,
   &:before {
-    width: 50px;
-    height: 4px;
+    width: $hamburger_width;
+    height: $hamburger_height;
 
     position: absolute;
-    top: 44px;
-    left: 21px;
+    top: round(($header_height - $hamburger_height) / 2);
+    right: 0px;
 
     background: #FFFFFF;
     display: block;
@@ -166,7 +170,7 @@
 
   &.expanded {
     i {
-      transform: translateX(71px);
+      transform: translateX($hamburger_width);
       opacity: 0;
     }
 
