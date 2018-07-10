@@ -106,3 +106,53 @@
     }
   }
 }
+
+
+.menu_toggle {
+  width: $header_height;
+  height: $header_height;
+
+  position: relative;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  text-indent: -999999px;
+
+  &,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+  }
+
+  i,
+  &:after,
+  &:before {
+    width: 50px;
+    height: 4px;
+
+    position: absolute;
+    top: 44px;
+    left: 21px;
+
+    background: #FFFFFF;
+    display: block;
+  }
+
+  i {
+
+  }
+
+  &:after {
+    transform: translateY(12px);
+  }
+
+  &:before {
+    transform: translateY(-12px);
+  }
+}
