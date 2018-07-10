@@ -124,6 +124,7 @@
   cursor: pointer;
   background-color: transparent;
   border: 0;
+  overflow: hidden;
   text-indent: -999999px;
 
   &,
@@ -149,10 +150,8 @@
 
     background: #FFFFFF;
     display: block;
-  }
 
-  i {
-
+    transition: all $speed;
   }
 
   &:after {
@@ -161,6 +160,21 @@
 
   &:before {
     transform: translateY(-12px);
+  }
+
+  &.expanded {
+    i {
+      transform: translateX(71px);
+      opacity: 0;
+    }
+
+    &:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+
+    &:before {
+      transform: translateY(0) rotate(45deg);
+    }
   }
 
   @media #{$mediaMD} {
