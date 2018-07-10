@@ -18,3 +18,10 @@ $mediaSM: "screen and (min-width: #{$min_sm})";
 $mediaMD: "screen and (min-width: #{$min_md})";
 $mediaLG: "screen and (min-width: #{$min_lg})";
 $mediaXL: "screen and (min-width: #{$min_xl})";
+
+
+$maxXS: "screen and (max-width: #{$min_xs - 1})";
+$maxSM: "screen and (max-width: #{$min_sm - 1})";
+$maxMD: "screen and (max-width: #{$min_md - 1})";
+$maxLG: "screen and (max-width: #{$min_lg - 1})";
+$maxXL: "screen and (max-width: #{$min_xl - 1})";

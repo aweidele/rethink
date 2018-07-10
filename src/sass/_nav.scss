@@ -1,4 +1,5 @@
 .main_nav {
+  transition: transform $speed;
   ul {
     list-style: none;
   }
@@ -70,6 +71,37 @@
     li.current-menu-item a {
       &:after {
         height: 5px;
+      }
+    }
+  }
+
+  @media #{$maxMD} {
+    width: 100%;
+    height: calc(100vh - #{$header_height});
+
+    position: fixed;
+    top: $header_height;
+    right: 0;
+
+    background: $gray_90;
+    padding: $page_padding;
+    transform: translateX(100%);
+
+    li {
+      padding: 0;
+      text-align: center;
+    }
+
+    a {
+      width: 100%;
+      padding: 0.4em 0;
+    }
+
+    a:hover,
+    li.current-menu-item a {
+      &:after {
+        display: none;
+        color: $yellow;
       }
     }
   }
