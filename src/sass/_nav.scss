@@ -1,5 +1,6 @@
 .main_nav {
-  transition: transform $speed;
+  transition: transform $speed, opacity $speed;
+
   ul {
     list-style: none;
   }
@@ -84,8 +85,14 @@
     right: 0;
 
     background: $gray_90;
+    opacity: 0;
     padding: $page_padding;
     transform: translateX(100%);
+
+    .menu_toggle.expanded + & {
+      opacity: 1;
+      transform: translateX(0);
+    }
 
     li {
       padding: 0;
@@ -154,5 +161,9 @@
 
   &:before {
     transform: translateY(-12px);
+  }
+
+  @media #{$mediaMD} {
+    display: none;
   }
 }
