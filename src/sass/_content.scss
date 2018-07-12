@@ -1,4 +1,6 @@
 .content_main {
+  position: relative;
+  z-index: 100;
   padding-top: $header_height;
 
   @media #{$mediaMD} {
