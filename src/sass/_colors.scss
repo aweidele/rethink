@@ -9,3 +9,22 @@ $red: #EE202E;
 $gray_10: #E8E5E2;
 $gray_50: #898C8E;
 $gray_90: #434345;
+
+$theme_colors: (
+  (yellow,$yellow),
+  (blue,$blue),
+  (red,$red),
+  (gray_10,$gray_10),
+  (gray_50,$gray_50),
+  (gray_90,$gray_90),
+  (white,$white),
+  (black,$black)
+);
+
+@mixin theme {
+  @each $name,$color in $theme_colors {
+    &.bg_#{$name} {
+      background-color: $color;
+    }
+  }
+}

@@ -1,13 +1,20 @@
 $header_height: 80px;
+$header_height_med: 93px;
+$header_height_lg: 108px;
 
 .header {
   width: 100%;
   height: $header_height;
   background: $black;
   position: fixed;
+  z-index: 99998;
 
   @media #{$mediaMD} {
-    height: auto;
+    height: $header_height_med;
+  }
+
+  @media #{$mediaLG} {
+    height: $header_height_lg;
   }
 }
 

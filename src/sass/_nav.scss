@@ -88,6 +88,7 @@
     opacity: 0;
     padding: $page_padding;
     transform: translateX(100%);
+    z-index: 9990;
 
     .menu_toggle.expanded + & {
       opacity: 1;

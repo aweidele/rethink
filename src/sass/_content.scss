@@ -1,0 +1,11 @@
+.content_main {
+  padding-top: $header_height;
+
+  @media #{$mediaMD} {
+    padding-top: $header_height_med;
+  }
+
+  @media #{$mediaLG} {
+    padding-top: $header_height_lg;
+  }
+}

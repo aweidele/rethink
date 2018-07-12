@@ -12,9 +12,12 @@
     echo get_bloginfo('name');
 } ?></title>
 
-<?php wp_head(); ?>
+<?php
+  wp_head();
+  $background_color = get_field("background_color",$post->ID);
+?>
 </head>
-<body>
+<body class="post_<?=$post->post_name?><?php if($background_color != "") { echo " bg_".$background_color; }?>">
 <header class="header">
   <div class="header_inner">
     <h1 class="header_logo"><a href="<?php echo get_home_url(); ?>">
