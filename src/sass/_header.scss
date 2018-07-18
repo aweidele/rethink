@@ -62,4 +62,8 @@ $header_height_lg: 108px;
       }
     }
   }
+
+  span {
+    @include visually_hide;
+  }
 }

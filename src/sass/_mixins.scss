@@ -8,3 +8,8 @@
 @mixin letterspacing($kern: 0) {
   letter-spacing: ($kern / 1000) * 1em;
 }
+
+@mixin visually_hide {
+  position: absolute;
+  left: -999999px;
+}
