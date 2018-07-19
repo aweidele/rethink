@@ -22,3 +22,7 @@
 </main>
 <?php
   get_footer();
+
+/*
+https://wordpress.stackexchange.com/questions/231693/how-to-change-the-markup-wordpress-inserts-for-post-images
+*/

@@ -14,3 +14,19 @@
   position: absolute;
   left: -999999px;
 }
+
+@mixin img_fullwidth {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@mixin img_maxwidth($maxwidth) {
+  @include img_fullwidth;
+  max-width: $maxwidth;
+}
+
+@mixin img_maxwidth_center($maxwidth) {
+  @include img_maxwidth($maxwidth);
+  margin: auto;
+}

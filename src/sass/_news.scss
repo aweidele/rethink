@@ -27,6 +27,10 @@
       margin-bottom: 1em;
       line-height: 1.25em;
     }
+
+    img {
+      @include img_fullwidth;
+    }
   }
 }
 

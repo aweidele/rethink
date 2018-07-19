@@ -18,8 +18,23 @@ function enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
+
+// Register Menu
 add_action( 'init', 'register_my_menu' );
 function register_my_menu() {
   register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
   //register_nav_menu( 'footer-menu', __( 'Footer Menu' ) );
+}
+
+
+// Image sizes
+add_theme_support('post-thumbnails');
+add_image_size( 'blog-image', 940, 999999 );
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'blog-image' => __( 'Blog Image' ),
+    ) );
 }
