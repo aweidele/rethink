@@ -5,8 +5,13 @@ if(is_home() || get_post_type() == "post") {
   $postID = $post->ID;
 }
 $background_image = get_field("background_image",$postID);
-if($background_image) { ?>
-  <div class="background_image" style="background-image: url(<?=$background_image["url"]?>)"></div>
+if($background_image) {
+  $backgrounds = [
+    'full' => $background_image["url"],
+    'mobile' => $background_image["sizes"]["background-mobile"]
+  ];
+?>
+  <div class="background_image" style="background-image: url(<?=$background_image["url"]?>)" data-background='<?=json_encode($backgrounds,JSON_HEX_QUOT)?>'></div>
 <?php } ?>
 <?php wp_footer(); ?>
 </body>
