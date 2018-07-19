@@ -1,0 +1,7 @@
+@mixin typesize {
+  font-size: 18x;
+
+  @media #{$mediaMD} {
+    font-size: 28px;
+  }
+}

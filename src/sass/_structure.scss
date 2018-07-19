@@ -24,3 +24,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+a {
+  &,
+  &:after {
+    transition: all $speed;
+  }
+}
