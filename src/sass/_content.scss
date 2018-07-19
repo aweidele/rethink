@@ -11,3 +11,15 @@
     padding-top: $header_height_lg;
   }
 }
+
+.content_wrapper {
+  @include inner_content;
+  margin-top: 15px;
+}
+
+.content_medium {
+  width: 100%;
+  max-width: 980px;
+  background: rgba($white,0.9);
+  padding: $page_padding;
+}
