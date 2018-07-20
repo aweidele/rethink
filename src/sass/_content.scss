@@ -24,3 +24,8 @@
   background: rgba($white,0.9);
   padding: $page_padding;
 }
+
+.content_wide {
+  @extend .content_medium;
+  max-width: $page_width + ($page_padding * 2);
+}
