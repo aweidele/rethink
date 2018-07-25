@@ -15,20 +15,14 @@
 ?>
       <article class="project">
         <a href="<?=get_permalink()?>">
+          <div class="project-title">
+            <h2><?php the_title(); ?></h2>
+            <p>test</p>
+          </div>
           <figure><img src="<?=$featured_image["sizes"]["project-listing"]?>"></figure>
-          <h2><?php the_title(); ?></h2>
         </a>
       </article>
 
-        <!-- <article class="news_post">
-          <header>
-            <h1><a href="<?=get_permalink()?>"><?php the_title(); ?></a></h1>
-            <p class="news_date"><?php the_date("Y.m.d"); ?></p>
-          </header>
-          <main>
-            <?php the_content(); ?>
-          </main>
-        </article> -->
 <?php endwhile; endif; ?>
     </div>
   </div>
