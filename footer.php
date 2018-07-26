@@ -1,5 +1,5 @@
 <?php
-if(is_home() || get_post_type() == "post") {
+if(is_home() || get_post_type() == "post" || get_post_type() == "projects") {
   $postID = get_option( 'page_for_posts' );
 } else {
   $postID = $post->ID;

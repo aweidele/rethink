@@ -2,7 +2,8 @@
   /* Template Name: Projects */
   get_header();
   $args = [
-    "post_type" => "projects"
+    "post_type" => "projects",
+    "orderby" => "menu_order"
   ];
   $projects_query = new WP_Query($args);
 ?>
