@@ -98,44 +98,44 @@ $project_gutter: 15px;
 
 // Projects Detail
 .project_single {
-  h1,
-  .project_subheading,
-  main {
-    @include typesize;
-  }
-
-  h1,
-  .project_subheading {
-    font-weight: $xbold;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    a {
-      color: $black;
-      text-decoration: none;
-
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
-
-  header {
-    margin-bottom: 1em;
-  }
-
-  p {
-    margin-bottom: 1em;
-  }
-
-  aside {
-    width: (423 / 940) * 100%;
-  }
+  // h1,
+  // .project_subheading,
+  // main {
+  //   @include typesize;
+  // }
+  //
+  // h1,
+  // .project_subheading {
+  //   font-weight: $xbold;
+  // }
+  //
+  // h1 {
+  //   text-transform: uppercase;
+  //   a {
+  //     color: $black;
+  //     text-decoration: none;
+  //
+  //     &:hover {
+  //       color: $blue;
+  //     }
+  //   }
+  // }
+  //
+  // header {
+  //   margin-bottom: 1em;
+  // }
+  //
+  // p {
+  //   margin-bottom: 1em;
+  // }
+  //
+  // aside {
+  //   width: (423 / 940) * 100%;
+  // }
 }
 
 .project_content {
   @media #{$mediaMD} {
-    display: flex;
+    //display: flex;
   }
 }

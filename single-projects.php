@@ -11,28 +11,15 @@
     $content = get_field("content");
 ?>
         <article class="project_single">
-          <div class="project_featured_image">
-            <figure>
-              <img src="<?=$featured_image["sizes"]["blog-image"]?>">
-            </figure>
+        <?php
+          foreach($content as $row) {
+        ?>
+          <div class="content_row <?=$row["acf_fc_layout"]?>">
+            <?php include("callouts/col_".$row["acf_fc_layout"].".php"); ?>
           </div>
-          <div class="project_content">
-            <div class="project_content_main">
-              <header>
-                <h1><a href="<?=get_permalink()?>"><?php the_title(); ?></a></h1>
-                <div class="project_subheading"><?= get_field("sub_heading")?></div>
-              </header>
-              <main>
-                <?php the_content(); ?>
-              </main>
-            </div>
-            <aside>
-              Hello.
-            </aside>
-          </div>
+        <?php } ?>
         </article>
 <?php endwhile; endif; ?>
-<pre><?php print_r($content); ?></pre>
     </div>
   </div>
 </main>
