@@ -8,6 +8,7 @@
 <?php
   if(have_posts()) : while(have_posts()) : the_post();
     $featured_image = get_field("featured_image");
+    $content = get_field("content");
 ?>
         <article class="project_single">
           <div class="project_featured_image">
@@ -31,6 +32,7 @@
           </div>
         </article>
 <?php endwhile; endif; ?>
+<pre><?php print_r($content); ?></pre>
     </div>
   </div>
 </main>
