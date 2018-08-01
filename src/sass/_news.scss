@@ -1,31 +1,18 @@
 .news_title {
-  @include typesize;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include heading1;
 }
 
 .news_post {
-  &,
-  h1 {
-    @include typesize;
-    margin-bottom: 1em;
-  }
+  @include typesize;
+  margin-bottom: 1em;
 
   h1 {
-    a {
-      color: $black;
-      text-decoration: none;
-
-      &:hover {
-        color: $blue;
-      }
-    }
+    @include heading2;
   }
 
   main {
     p {
-      margin-bottom: 1em;
-      line-height: 1.25em;
+      @include paragraph;
     }
 
     img {

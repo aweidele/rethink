@@ -7,7 +7,8 @@
 
       .content_col {
         &:first-child {
-
+          flex-grow: 1;
+          padding-right: $page_padding;
         }
 
         &:last-child {
@@ -25,9 +26,7 @@
 
 .block_image_figure {
   img {
-    width: 100%;
-    height: auto;
-    display: block;
+    @include img_fullwidth;
   }
 
   figcaption {
@@ -35,3 +34,6 @@
     padding: 0.2em 0;
   }
 }
+
+
+// Text Block
