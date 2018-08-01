@@ -30,6 +30,7 @@ function register_my_menu() {
 // Image sizes
 add_theme_support('post-thumbnails');
 add_image_size( 'blog-image', 940, 999999 );
+add_image_size( 'column-image', 687, 999999 );
 add_image_size( 'background-mobile', 564, 1004, true );
 add_image_size( 'project-listing', 440, 300, true );
 

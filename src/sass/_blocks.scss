@@ -1,0 +1,37 @@
+// Columns
+.content_row {
+  @media #{$mediaMD} {
+    &.two_column_row {
+      display: flex;
+      justify-content: space-between;
+
+      .content_col {
+        &:first-child {
+
+        }
+
+        &:last-child {
+          width: 48%;
+        }
+      }
+    }
+  }
+}
+
+// Image Block
+.block_image {
+  margin-bottom: 1em;
+}
+
+.block_image_figure {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  figcaption {
+    font-size: 14px;
+    padding: 0.2em 0;
+  }
+}
