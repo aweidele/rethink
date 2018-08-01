@@ -7,7 +7,7 @@
 
       .content_col {
         &:first-child {
-          flex-grow: 1;
+          width: 52%;
           padding-right: $page_padding;
         }
 
@@ -37,3 +37,20 @@
 
 
 // Text Block
+.block_text {
+  h2 {
+    @include heading2;
+  }
+
+  h3 {
+    @include heading3;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  img {
+    @include img_fullwidth;
+  }
+}

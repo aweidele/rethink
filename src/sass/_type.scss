@@ -26,6 +26,12 @@
   }
 }
 
+@mixin heading3 {
+  @include typesize;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 @mixin paragraph {
   @include typesize;
   margin-bottom: 1em;
