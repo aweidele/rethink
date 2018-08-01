@@ -29,7 +29,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('compress', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src(['node_modules/owl.carousel/dist/owl.carousel.js','src/js/*.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('js'))
     .pipe(rename('site.js'))
