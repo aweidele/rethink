@@ -13,12 +13,15 @@
 <?php
     if($projects_query -> have_posts()) : while($projects_query -> have_posts()) : $projects_query -> the_post();
       $featured_image = get_field("featured_image");
+      $sub_heading = get_field("sub_heading");
 ?>
       <article class="project">
         <a href="<?=get_permalink()?>">
           <div class="project-title">
             <h2><?php the_title(); ?></h2>
-            <p>test</p>
+            <?php if($sub_heading) { ?>
+            <p><?=$sub_heading?></p>
+            <?php } ?>
           </div>
           <figure><img src="<?=$featured_image["sizes"]["project-listing"]?>"></figure>
         </a>
