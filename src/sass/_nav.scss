@@ -33,10 +33,10 @@
   }
 
   li {
-    font-size: 18px;
-    padding: 0 16px;
+    @include typesize;
     @include letterspacing(75);
     @include bold;
+    padding: 0 16px;
 
     &:last-child {
       padding-right: 0;
@@ -60,8 +60,7 @@
 
   @media #{$mediaLG} {
     li {
-      font-size: 24px;
-      padding: 0 32px;
+      padding: 0 28px;
     }
 
     a:after {
