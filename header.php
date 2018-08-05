@@ -14,7 +14,7 @@
 
 <?php
   wp_head();
-  if(is_home() || get_post_type() == "post" || get_post_type() == "projects") {
+  if(is_home() || get_post_type() == "post") {
     $postID = get_option( 'page_for_posts' );
     $header_type = "div";
   } else {
@@ -24,7 +24,7 @@
   $background_color = get_field("background_color",$postID);
 ?>
 </head>
-<body class="post_<?=$post->post_name?><?php if($background_color != "") { echo " bg_".$background_color; }?>">
+<body class="post_<?=$post->post_name?><?php if($background_color != "") { echo " bg_".$background_color; } else { echo " bg_blue"; }?>">
 <header class="header">
   <div class="header_inner">
     <<?=$header_type?> class="header_logo"><a href="<?php echo get_home_url(); ?>"><span><?=get_bloginfo('name');?></span>
