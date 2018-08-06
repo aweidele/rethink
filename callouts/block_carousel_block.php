@@ -26,5 +26,3 @@
                   <?php } ?>
                 </div>
               </div>
-
-<pre><?php print_r($col["carousel_options"]);?></pre>

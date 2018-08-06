@@ -54,3 +54,55 @@
     @include img_fullwidth;
   }
 }
+
+
+// Carousel Block
+.block_carousel {
+  margin-bottom: 60px;
+  .carousel {
+    position: relative;
+
+    .owl-nav {
+      button {
+        &.owl-prev,
+        &.owl-next {
+          width: 30px;
+          height: 30px;
+
+          position: absolute;
+          top: 50%;
+
+          background: rgba($blue,0.5);
+          border: 1px solid rgba($white,0.3);
+          border-radius: 50%;
+          margin: 0;
+        }
+
+        &.owl-prev {
+          left: 0;
+          transform: translate(-50%,-50%);
+        }
+        &.owl-next {
+          right: 0;
+          transform: translate(50%,-50%);
+        }
+
+        &,
+        &:active,
+        &:focus {
+          border: 0;
+          outline: none;
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+
+      transform: translate(-50%,100%);
+      padding: 20px 0 0;
+    }
+  }
+}
