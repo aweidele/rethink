@@ -18,6 +18,11 @@ var autoprefixerOptions = {
   browsers: ['last 2 versions']
 };
 
+var jsQueue = [
+  'node_modules/owl.carousel/dist/owl.carousel.js',
+  'src/js/*.js'
+];
+
 gulp.task('sass', function(){
   return gulp
     .src('src/sass/main.scss')
@@ -29,7 +34,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('compress', function() {
-  return gulp.src(['node_modules/owl.carousel/dist/owl.carousel.js','src/js/*.js'])
+  return gulp.src(jsQueue)
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('js'))
     .pipe(rename('site.js'))
