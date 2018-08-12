@@ -1,5 +1,7 @@
 .frontpage_wrapper {
   min-height: calc(100vh - #{$header_height});
+  position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -17,6 +19,22 @@
   font-size: 32px;
   font-weight: 700;
   text-align: center;
+}
+
+.frontpage_scroll {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: $page_padding;
+
+  color: $white;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px $black;
+  text-transform: uppercase;
 }
 
 @media #{$mediaMD} {

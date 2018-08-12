@@ -12,11 +12,14 @@
   <?php the_content(); ?>
       </div>
     </div>
+    <?php if($content) { ?>
+    <a href="#page_blocks" class="frontpage_scroll">Scroll Down</a>
+    <?php } ?>
   </div>
   <?php if($content) { ?>
   <div class="content_wrapper">
     <div class="content_medium">
-      <section class="page_blocks">
+      <section class="page_blocks" id="page_blocks">
         <?php
           foreach($content as $row) {
         ?>

@@ -1,22 +1,27 @@
 (function($) {
-  var $ = jQuery;
-  $(document).ready(function() {
-    $(".menu_toggle").on("click",function() {
-      $(this).toggleClass("expanded");
-    });
+  $(".menu_toggle").on("click",function() {
+    $(this).toggleClass("expanded");
+  });
 
-    if($(".background_image").length) {
-      $backgrounds = $(".background_image").data("background");
-      $bgbp = "lg";
-    }
-    windowResize();
-    $(window).resize(function() { windowResize(); });
+  if($(".background_image").length) {
+    $backgrounds = $(".background_image").data("background");
+    $bgbp = "lg";
+  }
+  windowResize();
+  $(window).resize(function() { windowResize(); });
 
-    $(".owl-carousel").each(function() {
-      var options = $(this).data("options");
-      console.log(options);
-      $(this).owlCarousel(options);
-    });
+  $(".owl-carousel").each(function() {
+    var options = $(this).data("options");
+    console.log(options);
+    $(this).owlCarousel(options);
+  });
+
+  $('a[href^="#"]').on("click",function(e) {
+    e.preventDefault();
+    var h = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(h).offset().top
+    }, 1000);
   });
 
   function windowResize() {
