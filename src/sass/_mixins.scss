@@ -15,11 +15,9 @@
   margin-left: auto;
   padding: 0 $page_padding;
 
-  @include clearfix;
-
   img {
     display: block;
-    
+
     &.alignleft {
       float: left;
     }
