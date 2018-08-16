@@ -1,9 +1,38 @@
+@mixin clearfix {
+  &:after {
+    height: 0;
+
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
 @mixin inner_content {
   width: 100%;
   max-width: $page_width + ($page_padding * 2);
   margin-right: auto;
   margin-left: auto;
   padding: 0 $page_padding;
+
+  @include clearfix;
+
+  img {
+    display: block;
+    
+    &.alignleft {
+      float: left;
+    }
+
+    &.alignright {
+      float: right;
+    }
+
+    &.aligncenter {
+      display: block;
+      margin: auto;
+    }
+  }
 }
 
 @mixin letterspacing($kern: 0) {

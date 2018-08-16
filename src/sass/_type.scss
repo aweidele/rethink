@@ -35,5 +35,5 @@
 @mixin paragraph {
   @include typesize;
   margin-bottom: 1em;
-  line-height: 1.4em;
+  line-height: (24 / 21) * 1em;
 }
