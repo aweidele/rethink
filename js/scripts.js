@@ -3469,7 +3469,7 @@
     e.preventDefault();
     var h = $(this).attr("href");
     $('html, body').animate({
-      scrollTop: $(h).offset().top
+      scrollTop: $(h).offset().top - $(".header").height()
     }, 1000);
   });
 

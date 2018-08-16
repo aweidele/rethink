@@ -1,5 +1,6 @@
 <?php
   get_header();
+  $fields = get_fields();
 ?>
 <main class="content_main">
 <?php
@@ -16,24 +17,22 @@
     <a href="#page_blocks" class="frontpage_scroll">Scroll Down</a>
     <?php } ?>
   </div>
-  <?php if($content) { ?>
-  <div class="content_wrapper">
-    <div class="content_medium">
-      <section class="page_blocks" id="page_blocks">
-        <?php
-          foreach($content as $row) {
-        ?>
+  <?php
+    if($fields["homepage_sections"]) { ?>
+  <div id="page_blocks">
 
-          <div class="content_row <?=$row["acf_fc_layout"]?>">
-            <?php include("callouts/col_".$row["acf_fc_layout"].".php"); ?>
-          </div>
+    <?php foreach($fields["homepage_sections"] as $section) { ?>
+    <section class="frontpage_section bg_<?=$section["background_background_color"]?>">
+      <div class="frontpage_section_inner">
+        <?=wpautop($section["content"])?>
+      </div>
+    </section>
+    <?php } ?>
 
-        <?php } ?>
-      </section>
-    </div>
   </div>
+  <?php } ?>
+<pre style="background: #FFF"><?php print_r($fields); ?></pre>
 <?php
-  }
   endwhile; endif;
 ?>
 </main>

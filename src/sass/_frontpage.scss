@@ -65,3 +65,9 @@
     font-size: 56px;
   }
 }
+
+
+// Homeage Sections
+.frontpage_section {
+  @include theme;
+}

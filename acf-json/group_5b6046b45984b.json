@@ -129,82 +129,6 @@
                                             "max_height": "",
                                             "max_size": "",
                                             "mime_types": ""
-                                        },
-                                        {
-                                            "key": "field_5b68506b98a5a",
-                                            "label": "Carousel Options",
-                                            "name": "carousel_options",
-                                            "type": "group",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "layout": "block",
-                                            "sub_fields": [
-                                                {
-                                                    "key": "field_5b68507e98a5b",
-                                                    "label": "Items Per Screen",
-                                                    "name": "items",
-                                                    "type": "number",
-                                                    "instructions": "",
-                                                    "required": 0,
-                                                    "conditional_logic": 0,
-                                                    "wrapper": {
-                                                        "width": "",
-                                                        "class": "",
-                                                        "id": ""
-                                                    },
-                                                    "default_value": 1,
-                                                    "placeholder": "",
-                                                    "prepend": "",
-                                                    "append": "",
-                                                    "min": 1,
-                                                    "max": 4,
-                                                    "step": ""
-                                                },
-                                                {
-                                                    "key": "field_5b6852d931741",
-                                                    "label": "Page Indicators",
-                                                    "name": "dots",
-                                                    "type": "true_false",
-                                                    "instructions": "",
-                                                    "required": 0,
-                                                    "conditional_logic": 0,
-                                                    "wrapper": {
-                                                        "width": "",
-                                                        "class": "",
-                                                        "id": ""
-                                                    },
-                                                    "message": "Show dots under carousel?",
-                                                    "default_value": 1,
-                                                    "ui": 0,
-                                                    "ui_on_text": "",
-                                                    "ui_off_text": ""
-                                                },
-                                                {
-                                                    "key": "field_5b68533b31742",
-                                                    "label": "Navigation",
-                                                    "name": "nav",
-                                                    "type": "true_false",
-                                                    "instructions": "",
-                                                    "required": 0,
-                                                    "conditional_logic": 0,
-                                                    "wrapper": {
-                                                        "width": "",
-                                                        "class": "",
-                                                        "id": ""
-                                                    },
-                                                    "message": "Show navigation?",
-                                                    "default_value": 1,
-                                                    "ui": 0,
-                                                    "ui_on_text": "",
-                                                    "ui_off_text": ""
-                                                }
-                                            ]
                                         }
                                     ],
                                     "min": "",
@@ -283,6 +207,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
             }
         ],
         [
@@ -308,5 +237,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1533563749
+    "modified": 1534415256
 }
