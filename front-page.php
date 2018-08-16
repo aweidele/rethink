@@ -13,7 +13,7 @@
   <?php the_content(); ?>
       </div>
     </div>
-    <?php if($content) { ?>
+    <?php if($fields["homepage_sections"]) { ?>
     <a href="#page_blocks" class="frontpage_scroll">
       <svg id="arrow_down" data-name="arrow_down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.36 37.18"><path d="M34.18,37.18a3,3,0,0,1-2.12-.88L.88,5.12A3,3,0,0,1,5.12.88L34.18,29.94,63.24.88a3,3,0,0,1,4.24,4.24L36.3,36.3A3,3,0,0,1,34.18,37.18Z"/></svg>
       <span>Scroll Down</span>
