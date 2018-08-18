@@ -18,8 +18,8 @@
             "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
-            "min_width": 400,
-            "min_height": 300,
+            "min_width": "",
+            "min_height": "",
             "min_size": "",
             "max_width": "",
             "max_height": "",
@@ -44,6 +44,44 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5b782ea2530dd",
+            "label": "Double Wide",
+            "name": "double_wide",
+            "type": "true_false",
+            "instructions": "Span two columns in grid view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5b782ec4530de",
+            "label": "Double Tall",
+            "name": "double_tall",
+            "type": "true_false",
+            "instructions": "Span two rows in grid view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -65,5 +103,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1533765595
+    "modified": 1534603251
 }

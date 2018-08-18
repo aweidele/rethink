@@ -14,8 +14,12 @@
     if($projects_query -> have_posts()) : while($projects_query -> have_posts()) : $projects_query -> the_post();
       $featured_image = get_field("featured_image");
       $sub_heading = get_field("sub_heading");
+      $double_wide = get_field("double_wide");
+      $double_tall = get_field("double_tall");
 ?>
-      <article class="project">
+      <article class="project<?php
+        if($double_wide) { echo " dw"; }
+        if($double_tall) { echo " dt"; } ?>">
         <a href="<?=get_permalink()?>">
           <div class="project-title">
             <h2><?php the_title(); ?></h2>

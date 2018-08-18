@@ -43,8 +43,9 @@ $project_gutter: 15px;
   @media #{$mediaMD} {
     display: grid;
     grid-gap: $project_gutter;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    grid-auto-flow: dense;
 
     .project {
       margin: 0;
@@ -69,6 +70,14 @@ $project_gutter: 15px;
         z-index: 10;
       }
 
+      &.dw {
+        grid-column-end: span 2;
+      }
+
+      &.dt {
+        grid-row-end: span 2;
+      }
+
       a:hover {
         .project-title {
           opacity: 1;
@@ -89,7 +98,7 @@ $project_gutter: 15px;
   }
 
   @media #{$mediaLG} {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     .project {
 
     }
