@@ -33,6 +33,9 @@ add_image_size( 'blog-image', 940, 999999 );
 add_image_size( 'column-image', 687, 999999 );
 add_image_size( 'background-mobile', 564, 1004, true );
 add_image_size( 'project-listing', 440, 300, true );
+add_image_size( 'project-listing-dw', 900, 300, true );
+add_image_size( 'project-listing-dt', 440, 620, true );
+add_image_size( 'project-listing-dtw', 900, 620, true );
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 

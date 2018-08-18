@@ -16,6 +16,16 @@
       $sub_heading = get_field("sub_heading");
       $double_wide = get_field("double_wide");
       $double_tall = get_field("double_tall");
+
+      if($double_wide && $double_tall) {
+        $size = "project-listing-dtw";
+      } else if($double_wide) {
+        $size = "project-listing-dw";
+      } else if($double_tall) {
+        $size = "project-listing-dt";
+      } else {
+        $size = "project-listing";
+      }
 ?>
       <article class="project<?php
         if($double_wide) { echo " dw"; }
@@ -27,7 +37,7 @@
             <p><?=$sub_heading?></p>
             <?php } ?>
           </div>
-          <figure><img src="<?=$featured_image["sizes"]["project-listing"]?>"></figure>
+          <figure><img src="<?=$featured_image["sizes"][$size]?>"></figure>
         </a>
       </article>
 
