@@ -1,5 +1,6 @@
 .news_title {
-  @include heading1;
+  @include visually_hide;
+  //@include heading1;
 }
 
 .news_post {
