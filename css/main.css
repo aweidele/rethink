@@ -829,10 +829,13 @@ a, a:after {
 
 @media screen and (min-width: 768px) {
   .project_listing {
+    display: -ms-grid;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-auto-flow: dense;
   }
   .project_listing .project {
@@ -863,9 +866,11 @@ a, a:after {
     z-index: 10;
   }
   .project_listing .project.dw {
+    -ms-grid-column-span: 2;
     grid-column-end: span 2;
   }
   .project_listing .project.dt {
+    -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   .project_listing .project a:hover .project-title {
@@ -885,7 +890,8 @@ a, a:after {
 
 @media screen and (min-width: 1024px) {
   .project_listing {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
