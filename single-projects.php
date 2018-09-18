@@ -5,6 +5,7 @@
 <main class="content_main">
   <div class="content_wrapper">
     <div class="content_medium">
+      <a href="<?=get_permalink(11)?>" class="project_close"><span>Back To Projects</span></a>
 <?php
   if(have_posts()) : while(have_posts()) : the_post();
     $featured_image = get_field("featured_image");

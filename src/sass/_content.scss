@@ -20,6 +20,8 @@
 
 .content_medium {
   width: 100%;
+  position: relative;
+  z-index: 0;
   max-width: 980px;
   background: rgba($white,0.9);
   padding: $page_padding;
