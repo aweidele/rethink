@@ -27,7 +27,18 @@
     <?php foreach($fields["homepage_sections"] as $section) { ?>
     <section class="frontpage_section bg_<?=$section["background_background_color"]?>">
       <div class="frontpage_section_inner">
+        <?php if($section["acf_fc_layout"] == "two-column_content_block") { ?>
+        <div class="frontpage_section_inner_col">
+          <?=wpautop($section["left_column"])?>
+        </div>
+        <div class="frontpage_section_inner_col">
+          <?=wpautop($section["right_column"])?>
+        </div>
+        <?php } else { ?>
+        <div class="frontpage_section_inner_col">
         <?=wpautop($section["content"])?>
+        </div>
+        <?php } ?>
       </div>
     </section>
     <?php } ?>

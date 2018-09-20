@@ -125,3 +125,27 @@
     }
   }
 }
+
+@media #{$mediaMD} {
+  .frontpage_section_inner {
+    display: flex;
+  }
+
+  .frontpage_section_inner_col {
+    width: 50%;
+
+    &:first-child {
+      padding-right: $page_padding / 2;
+    }
+
+    &:last-child {
+      padding-left: $page_padding / 2;
+    }
+
+    &:only-child {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

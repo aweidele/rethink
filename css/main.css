@@ -723,6 +723,28 @@ a, a:after {
   color: #00B7F1;
 }
 
+@media screen and (min-width: 768px) {
+  .frontpage_section_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .frontpage_section_inner_col {
+    width: 50%;
+  }
+  .frontpage_section_inner_col:first-child {
+    padding-right: 10px;
+  }
+  .frontpage_section_inner_col:last-child {
+    padding-left: 10px;
+  }
+  .frontpage_section_inner_col:only-child {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .news_title {
   position: absolute;
   left: -999999px;
