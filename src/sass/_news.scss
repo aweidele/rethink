@@ -9,6 +9,8 @@
 
   h1 {
     @include heading2;
+    margin-bottom: 0;
+    text-transform: uppercase;
   }
 
   main {

@@ -424,8 +424,8 @@ a, a:after {
 }
 
 .block_image_figure figcaption {
-  font-size: 0.875rem;
-  padding: 0.2em 0;
+  font-size: 0.6875rem;
+  margin: 0.4em 0;
 }
 
 .block_text h2 {
@@ -455,6 +455,19 @@ a, a:after {
   .block_text p {
     font-size: 1.3125rem;
   }
+}
+
+.block_text p.wp-caption-text {
+  font-size: 0.6875rem;
+  margin-top: 0.4em;
+}
+
+.block_text a {
+  color: #000000;
+}
+
+.block_text a:hover {
+  color: #00B7F1;
 }
 
 .block_text img {
@@ -764,6 +777,8 @@ a, a:after {
 .news_post h1 {
   font-size: 1.125rem;
   margin-bottom: 1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
