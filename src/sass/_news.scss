@@ -16,6 +16,10 @@
   main {
     p {
       @include paragraph;
+
+      &.wp-caption-text {
+        @include caption;
+      }
     }
 
     img {

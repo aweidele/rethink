@@ -58,6 +58,11 @@
   margin: auto;
 }
 
+@mixin caption {
+  font-size: 11px;
+  margin-top: 0.4em;
+}
+
 
 @function sqrt($r) {
   $x0: 1;

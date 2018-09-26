@@ -425,7 +425,7 @@ a, a:after {
 
 .block_image_figure figcaption {
   font-size: 0.6875rem;
-  margin: 0.4em 0;
+  margin-top: 0.4em;
 }
 
 .block_text h2 {
@@ -806,6 +806,11 @@ a, a:after {
   .news_post main p {
     font-size: 1.3125rem;
   }
+}
+
+.news_post main p.wp-caption-text {
+  font-size: 0.6875rem;
+  margin-top: 0.4em;
 }
 
 .news_post main img {
