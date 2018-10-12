@@ -16,14 +16,30 @@
             <p class="news_date"><?php the_date("Y.m.d"); ?></p>
           </header>
           <main>
+
             <?php
             if($excerpt) {
               echo wpautop($excerpt);
               echo "\n".'<p><a href="'.get_permalink().'" class="readmore">Read More</a></p>'."\n";
             } else {
               the_content();
+              $content = get_field("content");
+              ?>
+
+              <section class="page_blocks">
+              <?php
+                foreach($content as $row) {
+              ?>
+                <div class="content_row <?=$row["acf_fc_layout"]?>">
+                  <?php include("callouts/col_".$row["acf_fc_layout"].".php"); ?>
+                </div>
+              <?php } ?>
+              </section>
+
+            <?php
             }
             ?>
+
           </main>
         </article>
 <?php endwhile; endif; ?>
