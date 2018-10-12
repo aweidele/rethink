@@ -27,6 +27,12 @@
           </main>
         </article>
 <?php endwhile; endif; ?>
+        <div class="news_pagination">
+          <?php the_posts_pagination([
+            "prev_text" => "<span>Previous</span>",
+            "next_text" => "<span>Next</span>"
+          ]); ?>
+        </div>
     </div>
   </div>
 </main>

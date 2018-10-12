@@ -856,6 +856,57 @@ a, a:after {
   font-weight: 700;
 }
 
+.news_pagination .screen-reader-text {
+  position: absolute;
+  left: -999999px;
+}
+
+.news_pagination .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news_pagination .page-numbers {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #898C8E;
+  color: #000000;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  margin: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.news_pagination .page-numbers.current {
+  border-color: #00B7F1;
+}
+
+.news_pagination .page-numbers:hover {
+  background: rgba(0, 183, 241, 0.3);
+}
+
+.news_pagination .page-numbers.prev span, .news_pagination .page-numbers.next span {
+  position: absolute;
+  left: -999999px;
+}
+
+.news_pagination .page-numbers.prev:after {
+  content: "<";
+}
+
+.news_pagination .page-numbers.next:after {
+  content: ">";
+}
+
 .project_listing .project {
   margin-bottom: 15px;
   position: relative;

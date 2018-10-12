@@ -46,3 +46,57 @@
 .news_date {
   font-weight: 700;
 }
+
+.news_pagination {
+  .screen-reader-text {
+    @include visually_hide;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-numbers {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $gray_50;
+    color: $black;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all $speed;
+
+    &.current {
+      border-color: $blue;
+    }
+
+    &:hover {
+      background: rgba($blue,0.3);
+    }
+
+    &.prev,
+    &.next {
+      span {
+        @include visually_hide;
+      }
+    }
+
+    &.prev {
+      &:after {
+        content: "<";
+      }
+    }
+
+    &.next {
+      &:after {
+        content: ">";
+      }
+    }
+  }
+}
