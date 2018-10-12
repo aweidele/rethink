@@ -776,6 +776,7 @@ a, a:after {
 
 .news_post h1 {
   font-size: 1.125rem;
+  font-weight: 700;
   margin-bottom: 1em;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -817,6 +818,38 @@ a, a:after {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.news_post main div {
+  max-width: 100%;
+}
+
+.news_post .readmore {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: #00B7F1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .news_post .readmore {
+    font-size: 1.3125rem;
+  }
+}
+
+.news_post .readmore a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.news_post .readmore a:hover {
+  color: #00B7F1;
+}
+
+.news_post .readmore:hover {
+  color: #000000;
 }
 
 .news_date {

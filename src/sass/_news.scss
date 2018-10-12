@@ -25,6 +25,21 @@
     img {
       @include img_fullwidth;
     }
+
+    div {
+      max-width: 100%;
+    }
+  }
+
+  .readmore {
+    @include heading2;
+    color: $blue;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $black;
+    }
   }
 }
 
