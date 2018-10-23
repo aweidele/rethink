@@ -31,3 +31,10 @@ a {
     transition: all $speed;
   }
 }
+
+pre {
+  background: rgba($white,0.75);
+  font-size: 18px;
+  position: relative;
+  z-index: 90000;
+}

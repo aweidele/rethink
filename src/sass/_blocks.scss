@@ -30,8 +30,7 @@
   }
 
   figcaption {
-    font-size: 14px;
-    padding: 0.2em 0;
+    @include caption;
   }
 }
 
@@ -49,6 +48,18 @@
 
   p {
     @include paragraph;
+
+    &.wp-caption-text {
+      @include caption;
+    }
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
   }
 
   img {

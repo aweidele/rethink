@@ -1,0 +1,43 @@
+{
+    "key": "group_5bc083cbcb868",
+    "title": "News",
+    "fields": [
+        {
+            "key": "field_5bc083d354ea5",
+            "label": "Excerpt",
+            "name": "excerpt",
+            "type": "wysiwyg",
+            "instructions": "This is what will appear on the News listing page. If this is left blank, the whole post will show.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1539346125
+}
