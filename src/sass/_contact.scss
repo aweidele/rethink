@@ -1,7 +1,29 @@
 .social_links {
   list-style: none;
+  margin-top: 1em;
 
   li {
     display: inline-block;
+    margin: 0 0.2em;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+
+    @media #{$mediaMD} {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media #{$mediaLG} {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  a > span {
+    @include visually_hide;
   }
 }

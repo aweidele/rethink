@@ -1082,10 +1082,37 @@ pre {
 
 .social_links {
   list-style: none;
+  margin-top: 1em;
 }
 
 .social_links li {
   display: inline-block;
+  margin: 0 0.2em;
+}
+
+.social_links svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .social_links svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .social_links svg {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.social_links a > span {
+  position: absolute;
+  left: -999999px;
 }
 
 /*

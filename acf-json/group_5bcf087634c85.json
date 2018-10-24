@@ -38,7 +38,8 @@
                         "facebook": "Facebook",
                         "twitter": "Twitter",
                         "youtube": "YouTube",
-                        "linkedin": "LinkedIn"
+                        "linkedin": "LinkedIn",
+                        "pinterest": "Pinterest"
                     },
                     "default_value": [],
                     "allow_null": 0,
@@ -83,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1540295240
+    "modified": 1540381182
 }

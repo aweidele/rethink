@@ -18,7 +18,12 @@
       echo "\n        <ul class=\"social_links\">\n";
       foreach($social_links as $link) {
 ?>
-          <li><a href="<?=$link["link"]["url"]?>" target="_blank"><?php echo file_get_contents( get_stylesheet_directory_uri() . "/svg/".$link["icon"]["value"].".svg" ); ?><span><?=$link["icon"]["label"]?></span></a></li>
+          <li>
+            <a href="<?=$link["link"]["url"]?>" target="_blank">
+              <?php echo file_get_contents( get_stylesheet_directory_uri() . "/svg/icon_".$link["icon"]["value"].".svg" ); ?>
+              <span><?=$link["icon"]["label"]?></span>
+            </a>
+          </li>
 <?php
       }
       echo "\n        </ul>\n";
