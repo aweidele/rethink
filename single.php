@@ -4,6 +4,7 @@
 <main class="content_main">
   <div class="content_wrapper">
     <div class="content_medium">
+      <a href="<?=get_permalink( get_option( 'page_for_posts' ) )?>" class="project_close"><span>Back To Projects</span></a>
 <?php
   if(have_posts()) : while(have_posts()) : the_post();
     $content = get_field("content");
