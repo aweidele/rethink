@@ -38,3 +38,9 @@
   margin-bottom: 1em;
   line-height: (24 / 21) * 1em;
 }
+
+.intro-text {
+  @include bold;
+  font-size: 24px;
+  margin-bottom: .6em;
+}
