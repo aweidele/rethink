@@ -636,6 +636,16 @@ pre {
   }
 }
 
+@media screen and (max-height: 700px) {
+  .frontpage_scroll {
+    bottom: 20px;
+  }
+  .frontpage_scroll svg {
+    width: 33px;
+    height: 18px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .frontpage_wrapper {
     min-height: calc(100vh - 93px);
