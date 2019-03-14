@@ -23,6 +23,12 @@
   }
   $background_color = get_field("background_color",$postID);
 ?>
+	
+	<style>
+		.block_text h4 + p {
+			margin-top: 1em;
+		}
+	</style>
 </head>
 <body class="post_<?=$post->post_name?><?php if($background_color != "") { echo " bg_".$background_color; } else { echo " bg_blue"; }?>">
 <header class="header">
