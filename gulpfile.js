@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var gcmq = require('gulp-group-css-media-queries');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var pxtorem = require('gulp-pxtorem');
@@ -30,6 +31,7 @@ gulp.task('sass', function(){
     .src('src/sass/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(gcmq())
     //.pipe(sourcemaps.write())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(pxtorem())

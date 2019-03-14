@@ -71,6 +71,15 @@
   @media #{$mediaXL} {
     bottom: 82px;
   }
+
+  @media screen and (max-height: 700px) {
+    bottom: 20px;
+    
+    svg {
+      width: 33px;
+      height: 18px;
+    }
+  }
 }
 
 @media #{$mediaMD} {
