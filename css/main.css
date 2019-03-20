@@ -1364,10 +1364,6 @@ pre {
     margin-bottom: 54px;
   }
 
-  .frontpage_content {
-    font-size: 3.5rem;
-  }
-
   .project_listing {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1382,6 +1378,10 @@ pre {
 @media screen and (min-width: 1200px) {
   .frontpage_scroll {
     bottom: 82px;
+  }
+
+  .frontpage_content {
+    font-size: 3.5rem;
   }
 }
 

@@ -74,7 +74,7 @@
 
   @media screen and (max-height: 700px) {
     bottom: 20px;
-    
+
     svg {
       width: 33px;
       height: 18px;
@@ -105,7 +105,9 @@
   .frontpage_inner {
     margin-bottom: $header_height_lg / 2;
   }
+}
 
+@media #{$mediaXL} {
   .frontpage_content {
     font-size: 56px;
   }
