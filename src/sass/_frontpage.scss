@@ -107,7 +107,7 @@
   }
 }
 
-@media #{$mediaXL} {
+@media screen and (min-width: 1360px) {
   .frontpage_content {
     font-size: 56px;
   }

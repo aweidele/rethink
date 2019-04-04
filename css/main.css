@@ -1379,7 +1379,9 @@ pre {
   .frontpage_scroll {
     bottom: 82px;
   }
+}
 
+@media screen and (min-width: 1360px) {
   .frontpage_content {
     font-size: 3.5rem;
   }
